@@ -1,0 +1,50 @@
+@import 'reset';
+
+/* ------------------------------------------------ Elementos complementarios -------------------------------------------- */
+$bg: (
+    0:#06283D,
+);
+
+@each $name,
+$color in $bg {
+    .bg#{$name} {
+        background-color: $color;
+    }
+}
+
+/* ------------------------------------------------- Diseños de la pagina index ------------------------------------------ */
+header{
+    @extend .bg0;
+    width: 100vw;
+    @media (min-width:576px) {
+
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+
+        img{
+            height: 100px;
+        }
+        nav ul a{
+            color: white;
+            font-size: 2vw;
+            text-decoration: none;
+            font-family: 'Share Tech Mono', monospace;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        nav ul a:hover{
+            font-family: 'Bungee Spice', cursive;
+            font-size: 2vw;
+        }
+
+        nav ul{
+            list-style-type: none;
+            height: 100px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+    }
+}
