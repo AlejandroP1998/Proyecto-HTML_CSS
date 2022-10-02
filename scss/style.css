@@ -50,7 +50,7 @@ table {
 }
 
 /* ------------------------------------------------ Elementos complementarios -------------------------------------------- */
-.bg0, header {
+.bg0 {
   background-color: #06283D;
 }
 
@@ -58,17 +58,17 @@ table {
 header {
   width: 100vw;
 }
-@media (min-width: 576px) {
+@media (min-width: 992px) {
   header {
     display: grid;
     grid-template-columns: 1fr 4fr;
   }
   header img {
-    height: 100px;
+    height: 150px;
   }
   header nav ul a {
     color: white;
-    font-size: 2vw;
+    font-size: 2.5vw;
     text-decoration: none;
     font-family: "Share Tech Mono", monospace;
     padding-top: 20px;
@@ -76,14 +76,76 @@ header {
   }
   header nav ul a:hover {
     font-family: "Bungee Spice", cursive;
-    font-size: 2vw;
+    font-size: 2.5vw;
   }
   header nav ul {
     list-style-type: none;
-    height: 100px;
+    height: 150px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+  }
+}
+@media (max-width: 992px) and (min-width: 768px) {
+  header {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 40px;
+  }
+  header img {
+    height: 150px;
+  }
+  header nav ul a {
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    font-family: "Share Tech Mono", monospace;
+  }
+  header nav ul a:hover {
+    font-family: "Bungee Spice", cursive;
+    font-size: 2rem;
+  }
+  header nav ul {
+    list-style-type: none;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    height: auto;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  header a {
+    margin: auto;
+  }
+  header img {
+    height: 150px;
+  }
+  header nav ul a {
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    font-family: "Share Tech Mono", monospace;
+  }
+  header nav ul a:hover {
+    font-family: "Bungee Spice", cursive;
+    font-size: 2rem;
+  }
+  header nav ul {
+    list-style-type: none;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
   }
 }/*# sourceMappingURL=style.css.map */

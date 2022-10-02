@@ -13,38 +13,109 @@ $color in $bg {
 }
 
 /* ------------------------------------------------- Diseños de la pagina index ------------------------------------------ */
-header{
-    @extend .bg0;
+header {
     width: 100vw;
-    @media (min-width:576px) {
 
+    @media (min-width:992px) {
         display: grid;
         grid-template-columns: 1fr 4fr;
 
-        img{
-            height: 100px;
+        img {
+            height: 150px;
         }
-        nav ul a{
+
+        nav ul a {
             color: white;
-            font-size: 2vw;
+            font-size: 2.5vw;
             text-decoration: none;
             font-family: 'Share Tech Mono', monospace;
             padding-top: 20px;
             padding-bottom: 20px;
         }
 
-        nav ul a:hover{
+        nav ul a:hover {
             font-family: 'Bungee Spice', cursive;
-            font-size: 2vw;
+            font-size: 2.5vw;
         }
 
-        nav ul{
+        nav ul {
             list-style-type: none;
-            height: 100px;
+            height: 150px;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
             align-items: center;
+        }
+    }
+
+    @media (max-width:992px) and (min-width:768px) {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 40px;
+
+
+
+        img {
+            height: 150px;
+        }
+
+        nav ul a {
+            color: white;
+            font-size: 2rem;
+            text-decoration: none;
+            font-family: 'Share Tech Mono', monospace;
+        }
+
+        nav ul a:hover {
+            font-family: 'Bungee Spice', cursive;
+            font-size: 2rem;
+        }
+
+        nav ul {
+            list-style-type: none;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items:center;
+        }
+    }
+
+    @media (max-width:768px){
+        height: auto;
+        padding-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+
+        a{
+            margin: auto;
+        }
+
+        img {
+            height: 150px;
+        }
+
+        nav ul a {
+            color: white;
+            font-size: 2rem;
+            text-decoration: none;
+            font-family: 'Share Tech Mono', monospace;
+        }
+
+        nav ul a:hover {
+            font-family: 'Bungee Spice', cursive;
+            font-size: 2rem;
+        }
+
+        nav ul {
+            list-style-type: none;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items:center;
         }
     }
 }
