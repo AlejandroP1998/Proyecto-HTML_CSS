@@ -7,22 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- favicon -->
     <link rel="shortcut icon" href="./assets/imgs/favicon.jpg" type="image/x-icon">
-    <!-- hoja de estilos -->
+    <!-- estilos de bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- estilos propios-->
     <link rel="stylesheet" href="./scss/style.css">
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
     <!-- Nombre de la pestaña -->
     <title>TechClub</title>
 </head>
 
-<body>
+<body id="index">
 
     <!-- Barra de navegacion -->
-    <header class="bg0">
-        <a href="./index.html"><img src="./assets/imgs/logo.svg" alt="logo"></a>
+    <header class="bg0 encabezado">
+        <a href="./index.html"><img id="logo" src="./assets/imgs/logo.jpg" alt="logo"></a>
         <nav>
             <ul>
                 <li><a href="./layout/accesorios.html">Accesorios</a></li>
@@ -33,10 +36,276 @@
         </nav>
     </header>
 
-    <!-- Contenido principal -->
-    <main>
 
+    <!-- Barra izquierda -->
+    <section class="bar">
+        <h3 class="fs-1">Directorio</h3><br>
+        <div>
+            <h4 class="fs-3"><a href="./layout/accesorios.html">Accesorios</a></h4>
+            <ul>
+                <li><a class="link fs-5" href="#">Audifonos</a></li>
+                <li><a class="link fs-5" href="#">Bocinas</a></li>
+                <li><a class="link fs-5" href="#">Lamparas</a></li>
+                <li><a class="link fs-5" href="#">Fundas</a></li>
+                <li><a class="link fs-5" href="#">WebCams</a></li>
+                <li><a class="link fs-5" href="#">Ratones</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="fs-3 py-3"><a href="./layout/repuestos.html">Repuestos</a></h4>
+            <ul>
+                <li><a class="link fs-5" href="#">Memoria RAM</a></li>
+                <li><a class="link fs-5" href="#">Disco HDD</a></li>
+                <li><a class="link fs-5" href="#">Disco SSD</a></li>
+                <li><a class="link fs-5" href="#">Pantallas</a></li>
+                <li><a class="link fs-5" href="#">Camaras</a></li>
+                <li><a class="link fs-5" href="#">Touchpads</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="fs-3 py-3"><a href="./layout/computadoras.html">Computadoras</a></h4>
+            <ul>
+                <li><a class="link fs-5" href="#">Desktops</a></li>
+                <li><a class="link fs-5" href="#">Laptops</a></li>
+                <li><a class="link fs-5" href="#">Tablets</a></li>
+                <li><a class="link fs-5" href="#">Celulares</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="fs-3 py-3"><a href="./layout/sillas.html">Sillas</a></h4>
+            <ul>
+                <li><a class="link fs-5" href="#">Razer</a></li>
+                <li><a class="link fs-5" href="#">Vertagear</a></li>
+                <li><a class="link fs-5" href="#">DX-Razer</a></li>
+            </ul>
+        </div>
+        <div class="imgs">
+            <a href="https://wa.me/50256276439"><img src="./assets/imgs/whatsapp-logo.png" alt="whatsapp-logo"></a>
+            <a href="https://www.facebook.com/JosIngPro98/"><img src="./assets/imgs/facebook-logo.png"
+                    alt="facebook-logo"></a>
+            <a href="https://www.instagram.com/alejo_perez_98/"><img src="./assets/imgs/instagram-logo.png"
+                    alt="instagram-logo"></a>
+        </div>
+
+    </section>
+
+    <!-- Contenido principal -->
+    <main class="main-index bg2">
+        <!-- Carrousel de imagenes -->
+        <div id="carouselExampleDark" class="carousel carousel-dark slide contenido" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="./assets/imgs/android.jpg" class="c-img" alt="promo">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="fs-3"><a href="./layout/computadoras.html">COMBO ANDROID</a></h5><br>
+                        <p class="fs-5">Desktop o laptop (SO:Android) + Mouse Bluetooth + Teclado Bluetooth + Audifonos
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./assets/imgs/mac.jpg" class="c-img" alt="promo">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="fs-3"><a href="./layout/computadoras.html">COMBO MAC</a></h5><br>
+                        <p class="fs-5">Desktop o laptop (SO:IOS) + Mouse Bluetooth + Teclado Bluetooth</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/imgs/win.jpg" class="c-img" alt="promo">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="fs-3"><a href="./layout/computadoras.html">COMBO WINDOWS</a></h5><br>
+                        <p class="fs-5">Desktop o laptop (SO:Windows) + Mouse Bluetooth + Teclado Bluetooth + Audifonos
+                            + Bocinas</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </main>
+
+    <!-- Division -->
+    <section class="division">
+        <h1 class="fs-1">Las mas potentes</h1>
+        <hr>
+    </section>
+
+    <!-- Imagenes de computadoras -->
+    <section class="sect1">
+
+        <div class="div-imagen">
+            <a href="./layout/computadoras.html">
+                <div>
+                    <h3 class="fs-4">Dell xps 14</h3>
+                </div>
+                <img class="desvanecer img-s1" src="./assets/imgs/dell-xps.avif" alt="compu">
+            </a>
+        </div>
+        <div class="div-imagen">
+            <a href="./layout/computadoras.html">
+                <div>
+                    <h3 class="fs-4">Acer Aspire 5</h3>
+                </div>
+                <img class="desvanecer img-s1" src="./assets/imgs/acer-aspire.jpg" alt="compu">
+            </a>
+        </div>
+        <div class="div-imagen">
+            <a href="./layout/computadoras.html">
+                <div>
+                    <h3 class="fs-4">HP Omen 15</h3>
+                </div>
+                <img class="desvanecer img-s1" src="./assets/imgs/hp-omen.jpg" alt="compu">
+            </a>
+        </div>
+    </section>
+
+    <!-- Division -->
+    <section class="division2">
+        <hr>
+        <h1 class="fs-1">Tus complementos</h1>
+        <hr>
+    </section>
+
+    <!-- Imagenes de accesorios -->
+    <section class="sect2">
+
+        <div class="div-imagen">
+            <a href="./layout/accesorios.html">
+                <div>
+                    <h3 class="fs-4">Auriculares inalambricos</h3>
+                </div>
+                <img class="desvanecer img-s1" src="./assets/imgs/acc1.webp" alt="accesorio">
+            </a>
+        </div>
+        <div class="div-imagen">
+            <a href="./layout/accesorios.html">
+                <div>
+                    <h3 class="fs-4">Audifonos variedad de colores</h3>
+                </div>
+                <img class="desvanecer img-s1" src="./assets/imgs/acc2.webp" alt="accesorio">
+            </a>
+        </div>
+        <div class="div-imagen">
+            <a href="./layout/accesorios.html">
+                <div>
+                    <h3 class="fs-4">Bocinas HP Bluetooth</h3>
+                </div>
+                <img class="desvanecer img-s1" src="./assets/imgs/acc3.webp" alt="accesorio">
+            </a>
+        </div>
+    </section>
+
+    <!-- Division -->
+    <section class="division3">
+        <hr>
+        <h1 class="fs-1">Tus repuestos</h1>
+        <hr>
+    </section>
+
+    <!-- Imagenes de repuestos -->
+    <section class="sect3">
+
+        <div class="div-imagen">
+            <a href="./layout/repuestos.html">
+                <div>
+                    <h3 class="fs-4">Memoria RAM DDR4</h3>
+                </div>
+                <img class="desvanecer img-s1" src="./assets/imgs/rep1.jpg" alt="repuesto">
+            </a>
+        </div>
+        <div class="div-imagen">
+            <a href="./layout/repuestos.html">
+                <div>
+                    <h3 class="fs-4">Disco HDD Oferta</h3>
+                </div>
+                <img class="desvanecer img-s1" src="./assets/imgs/rep2.jpg" alt="repuesto">
+            </a>
+        </div>
+        <div class="div-imagen">
+            <a href="./layout/repuestos.html">
+                <div>
+                    <h3 class="fs-4">WebCam 4K</h3>
+                </div>
+                <img class="desvanecer img-s1" src="./assets/imgs/rep3.webp" alt="repuesto">
+            </a>
+        </div>
+    </section>
+
+    <!-- Division -->
+    <section class="division4">
+        <hr>
+        <h1 class="fs-1">Sillas de ensueño</h1>
+        <hr>
+    </section>
+
+    <!-- Imagenes de sillas -->
+    <section class="sect4">
+
+        <div class="div-imagen">
+            <a href="./layout/sillas.html">
+                <div>
+                    <h3 class="fs-4">Silla Razer</h3>
+                </div>
+                <img class="desvanecer img-s1" src="./assets/imgs/silla1.webp" alt="silla">
+            </a>
+        </div>
+        <div class="div-imagen">
+            <a href="./layout/sillas.html">
+                <div>
+                    <h3 class="fs-4">Silla Vertagear</h3>
+                </div>
+                <img class="desvanecer img-s1" src="./assets/imgs/silla2.jpg" alt="silla">
+            </a>
+        </div>
+        <div class="div-imagen">
+            <a href="./layout/sillas.html">
+                <div>
+                    <h3 class="fs-4">Silla DX-Razer</h3>
+                </div>
+                <img class="desvanecer img-s1" src="./assets/imgs/silla3.jpg" alt="silla">
+            </a>
+        </div>
+    </section>
+
+    <!-- Pie de pagina -->
+    <footer class="bg2">
+        <div>
+            <h3>Locales alrededor del país</h3>
+            <ul>
+                <li>Vista Hermosa 1, ciudad capital 5-20 zona 2</li><br>
+                <li>San Antonio, Sacatepequez 3-14 sector 3</li><br>
+                <li>Santa Catarina Pinula, Guatemala 2-20 zona 1</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Contacto</h3>
+            <ul>
+                <li>PBX: 456-456-789</li><br>
+                <li>Correo: informacion@techClub.com</li><br>
+                <li>Direccion postal: +001 4523</li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- JavaScript bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
 
 </body>
 
