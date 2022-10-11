@@ -4,11 +4,13 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+
     @media (max-width:992px) and (min-width:768px) {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
-    @media (max-width:768px){
+
+    @media (max-width:768px) {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
@@ -20,16 +22,19 @@
     -moz-box-shadow: 0 0px 4px #000, 0 0 20px #000 inset;
     box-shadow: 0 0px 30px #000, 0 0 20px #CCC inset;
     margin: 2vw;
+
     @media (min-width:992px) {
         width: 20vw;
     }
+
     @media (max-width:992px) and (min-width:768px) {
         width: 28vw;
     }
-    @media (max-width:768px){
+
+    @media (max-width:768px) {
         width: 45vw;
     }
-    
+
 }
 
 .card img {
@@ -69,45 +74,55 @@
     }
 }
 
-.btn-form{
+.btn-form {
     border-radius: 0;
     margin: 0;
 
 }
 
-.btn-form:hover{
+.btn-form:hover {
     background-color: #C70039;
 }
 
-#compra{
+#compra {
     padding: 2vw;
     font-family: 'Share Tech Mono', monospace;
-    .form-control{
+
+    .form-control {
         border-radius: 0;
     }
 }
 
 /* ---------------------------------------- Repuestos ---------------------------------------------- */
-.tech{
-    background-image: url(../assets/imgs/repuestos/tech-service.jpg);
-    background-size: 100vw auto;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    div{
-        font-family: 'Share Tech Mono', monospace;
-        width: 60vw;
-        
+.tech {
+
+
+    @media (min-width: 768px) {
+        background-image: url(../assets/imgs/repuestos/tech-service.jpg);
+        background-size: 100vw auto;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        div {
+            font-family: 'Share Tech Mono', monospace;
+            width: 60vw;
+
+        }
+    }
+
+    @media (max-width: 768px) {
+        display: none;
     }
 }
 
-.on{
+.on {
     text-decoration: underline;
 }
 
-.centro{
+.centro {
     width: 100%;
     display: flex;
     justify-content: center;

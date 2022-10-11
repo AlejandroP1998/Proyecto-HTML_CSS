@@ -148,7 +148,7 @@ p {
   top: 0;
   left: 0;
   z-index: -1;
-  padding: 10px;
+  padding: 0;
   margin: 0;
 }
 
@@ -312,18 +312,25 @@ p {
 }
 
 /* ---------------------------------------- Repuestos ---------------------------------------------- */
-.tech {
-  background-image: url(../assets/imgs/repuestos/tech-service.jpg);
-  background-size: 100vw auto;
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@media (min-width: 768px) {
+  .tech {
+    background-image: url(../assets/imgs/repuestos/tech-service.jpg);
+    background-size: 100vw auto;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tech div {
+    font-family: "Share Tech Mono", monospace;
+    width: 60vw;
+  }
 }
-.tech div {
-  font-family: "Share Tech Mono", monospace;
-  width: 60vw;
+@media (max-width: 768px) {
+  .tech {
+    display: none;
+  }
 }
 
 .on {
@@ -479,8 +486,11 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     color: white;
-    padding: 1vw;
     padding-bottom: 300px;
+  }
+  footer div {
+    margin-top: 1vw;
+    margin-left: 1vw;
   }
 }
 @media (max-width: 768px) {
@@ -490,8 +500,11 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     color: white;
-    padding: 1vw;
     padding-bottom: 600px;
+  }
+  footer div {
+    margin-top: 1vw;
+    margin-left: 1vw;
   }
 }
 footer ul {
