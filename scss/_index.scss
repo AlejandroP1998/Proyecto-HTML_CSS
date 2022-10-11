@@ -27,7 +27,7 @@
     grid-area: bar;
 
     @media (min-width:768px) {
-        
+
         font-family: 'Share Tech Mono', monospace;
         padding-left: 2vw;
         padding-top: 1vw;
@@ -66,6 +66,7 @@ a {
 /* ------- main -------- */
 .main-index {
     grid-area: main;
+
     @media (max-width:768px) {
         display: none;
     }
@@ -93,8 +94,16 @@ p {
 /* ------- sect1 -------- */
 .sect1 {
     grid-area: sect1;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+
+    @media (min-width:768px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @media (max-width:768px) {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
 
 .div-imagen {
@@ -128,7 +137,7 @@ p {
 
 
 .img-s1 {
-    width: 100%;
+    width: 90%;
 }
 
 /* ----- division ----- */
