@@ -66,7 +66,6 @@ table {
 }
 @media (min-width: 768px) {
   .bar {
-    background-color: #F66B0E;
     font-family: "Share Tech Mono", monospace;
     padding-left: 2vw;
     padding-top: 1vw;
@@ -225,6 +224,119 @@ p {
   align-items: center;
 }
 
+/* ---------------------------------------- Accesorios ---------------------------------------------- */
+@media (min-width: 992px) {
+  .acc-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 992px) and (min-width: 768px) {
+  .acc-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .acc-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.card {
+  border-radius: 0;
+  -webkit-box-shadow: 0 0px 4px #000000, 0 0 20px #000 inset;
+  -moz-box-shadow: 0 0px 4px #000, 0 0 20px #000 inset;
+  box-shadow: 0 0px 30px #000, 0 0 20px #CCC inset;
+  margin: 2vw;
+}
+@media (min-width: 992px) {
+  .card {
+    width: 20vw;
+  }
+}
+@media (max-width: 992px) and (min-width: 768px) {
+  .card {
+    width: 28vw;
+  }
+}
+@media (max-width: 768px) {
+  .card {
+    width: 45vw;
+  }
+}
+
+.card img {
+  height: 250px;
+}
+
+.card-title,
+.card-text {
+  font-family: "Share Tech Mono", monospace;
+}
+
+.btn-card {
+  border-radius: 0;
+  margin-left: 0;
+  width: 100%;
+}
+
+.division2 hr {
+  color: transparent;
+  margin-top: 0;
+}
+.division2 h1 {
+  background-color: #251D3A;
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-family: "Bungee Spice", cursive;
+}
+
+.btn-form {
+  border-radius: 0;
+  margin: 0;
+}
+
+.btn-form:hover {
+  background-color: #C70039;
+}
+
+#compra {
+  padding: 2vw;
+  font-family: "Share Tech Mono", monospace;
+}
+#compra .form-control {
+  border-radius: 0;
+}
+
+/* ---------------------------------------- Repuestos ---------------------------------------------- */
+.tech {
+  background-image: url(../assets/imgs/repuestos/tech-service.jpg);
+  background-size: 100vw auto;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tech div {
+  font-family: "Share Tech Mono", monospace;
+  width: 60vw;
+}
+
+.on {
+  text-decoration: underline;
+}
+
+.centro {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
 /* ------------------------------------------------ Elementos complementarios -------------------------------------------- */
 /* Map de fondos de pantalla */
 .bg0 {
@@ -235,44 +347,20 @@ p {
   background-color: rgba(1, 19, 38, 0.7);
 }
 
-.bg2 {
+.bg2, .btn-card:hover {
   background-color: #251D3A;
 }
 
 .bg3 {
-  background-color: #FFC900;
+  background-color: #F66B0E;
 }
 
 .bg4 {
-  background-color: #187498;
+  background-color: #5089C6;
 }
 
 .bg5 {
-  background-color: #FFB200;
-}
-
-.bg6 {
-  background-color: #0C1E7F;
-}
-
-.bg7 {
-  background-color: #293462;
-}
-
-.bg8 {
-  background-color: #FF6FB5;
-}
-
-.bg9 {
-  background-color: #F47340;
-}
-
-.bg10 {
-  background-color: #91D18B;
-}
-
-.bg11 {
-  background-color: #FFF89A;
+  background-color: #FF4C29;
 }
 
 /* --------------------------------------------- Diseños de la barra de navegacion ---------------------------------------- */
@@ -383,12 +471,28 @@ header {
 footer {
   grid-area: footer;
   font-family: "Share Tech Mono", monospace;
-  width: 100vw;
-  height: 200px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  color: white;
-  padding: 1vw;
+}
+@media (min-width: 768px) {
+  footer {
+    width: 100vw;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+    padding: 1vw;
+    padding-bottom: 300px;
+  }
+}
+@media (max-width: 768px) {
+  footer {
+    width: 100vw;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+    padding: 1vw;
+    padding-bottom: 600px;
+  }
 }
 footer ul {
   margin-left: 2vw;

@@ -1,4 +1,4 @@
-@import 'reset', 'index';
+@import 'reset', 'index', 'productos';
 
 /* ------------------------------------------------ Elementos complementarios -------------------------------------------- */
 /* Map de fondos de pantalla */
@@ -6,15 +6,9 @@ $fondo: (
     0:#06283D,
     1: rgba(1, 19, 38, 0.7),
     2: #251D3A,
-    3: #FFC900,
-    4: #187498,
-    5: #FFB200,
-    6: #0C1E7F,
-    7: #293462,
-    8: #FF6FB5,
-    9: #F47340,
-    10: #91D18B,
-    11: #FFF89A
+    3: #F66B0E,
+    4: #5089C6,
+    5: #FF4C29
 );
 
 @each $name,
@@ -145,17 +139,33 @@ header {
 footer {
     grid-area: footer;
     font-family: 'Share Tech Mono', monospace;
-    width: 100vw;
-    height: 200px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    color: white;
-    padding: 1vw;
-    ul{
+
+    @media (min-width:768px) {
+        width: 100vw;
+        height: 200px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        color: white;
+        padding: 1vw;
+        padding-bottom: 300px;
+    }
+
+    @media (max-width:768px) {
+        width: 100vw;
+        height: 200px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        color: white;
+        padding: 1vw;
+        padding-bottom: 600px;
+    }
+
+    ul {
         margin-left: 2vw;
         margin-top: 2vw;
     }
-    h3{
+
+    h3 {
         text-transform: uppercase;
     }
 }

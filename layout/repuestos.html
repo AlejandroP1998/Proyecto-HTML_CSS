@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- favicon -->
     <link rel="shortcut icon" href="../assets/imgs/favicon.jpg" type="image/x-icon">
+    <!-- estilos de bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- hoja de estilos -->
     <link rel="stylesheet" href="../scss/style.css">
     <!-- Google fonts -->
@@ -20,20 +23,396 @@
     
     <!-- Barra de navegacion -->
     <header class="bg0">
-        <a href="../index.html"><img id="logo" src="../assets/imgs/logo.jpg" alt="logo"></a>
+        <a href="../index.html" target="_blank"><img id="logo" src="../assets/imgs/logo.jpg" alt="logo"></a>
         <nav>
             <ul>
-                <li><a href="./accesorios.html">Accesorios</a></li>
-                <li><a href="./repuestos.html">Repuestos</a></li>
-                <li><a href="./computadoras.html">Computadoras</a></li>
-                <li><a href="./sillas.html">Sillas</a></li>
+                <li><a href="./accesorios.html" target="_blank">Accesorios</a></li>
+                <li><a class="on" href="./repuestos.html">Repuestos</a></li>
+                <li><a href="./dispositivos.html" target="_blank">Dispositivos</a></li>
+                <li><a href="./sillas.html" target="_blank">Sillas</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Contenido principal -->
-    <main>
-        
+    <!-- Servicio tecnico -->
+    <main class="tech">
+        <div class="bg1 text-white">
+            <br>
+            <h1 class="fs-1">Servicio tecnico las 24 horas</h1><br>
+            <hr>
+            <p class="fs-3">Ven con tus equipos dañados para escatimar el daño y analizar el presupuesto, el tiempo que llevara conseguir los repuestos que se ajusten a tu equipo, el tiempo que durara la reparacion y la forma de entrega.</p><hr>
+            <div class="centro">
+                <a href="#compra" class="fs-1">Agendar cita</a>
+            </div>
+            <hr>
+        </div>
     </main>
+
+    <!-- RAM y lentes -->
+    <section class="division2 bg4" id="rep-1">
+        <hr>
+        <h1 class="fs-1">RAM y lentes de camaras</h1>
+    </section>
+    
+    <section class="acc-1 bg4">
+        <div>
+            <div class="card">
+                <img src="../assets/imgs/repuestos/rep1.png" class="card-img-top" alt="accesorio">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fs-2">Memoria RAM DDR3</h5>
+                    <p class="card-text text-dark fs-5">
+                        Memoria RAM para computadoras DDR3.
+                    </p>
+                    <a href="#compra" class="btn btn-card bg0 text-white">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card">
+                <img src="../assets/imgs/repuestos/rep2.jpg" class="card-img-top" alt="accesorio">
+                <div class="card-body">
+                    <h5 class="card-title fs-2">Memoria RAM DDR3 clasica</h5>
+                    <p class="card-text text-dark fs-5">
+                        Memoria RAM para computadoras DDR3.
+                    </p>
+                    <a href="#compra" class="btn btn-card bg0 text-white">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card">
+                <img src="../assets/imgs/repuestos/rep3.jpg" class="card-img-top" alt="accesorio">
+                <div class="card-body">
+                    <h5 class="card-title fs-2">Memoria RAM DDR2</h5>
+                    <p class="card-text text-dark fs-5">
+                        Memoria RAM para computadoras DDR2.
+                    </p>
+                    <a href="#compra" class="btn btn-card bg0 text-white">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card">
+                <img src="../assets/imgs/repuestos/rep4.jpg" class="card-img-top" alt="accesorio">
+                <div class="card-body">
+                    <h5 class="card-title fs-2">Memoria RAM DDR4</h5>
+                    <p class="card-text text-dark fs-5">
+                        Memoria RAM para computadoras DDR4.
+                    </p>
+                    <a href="#compra" class="btn btn-card bg0 text-white">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card">
+                <img src="../assets/imgs/repuestos/rep5.jpeg" class="card-img-top" alt="accesorio">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fs-2">Lente Camara web</h5>
+                    <p class="card-text text-dark fs-5">
+                        Lente para camara web de alta definición (HD/4K).
+                    </p>
+                    <a href="#compra" class="btn btn-card bg0 text-white">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card">
+                <img src="../assets/imgs/repuestos/rep6.jpg" class="card-img-top" alt="accesorio">
+                <div class="card-body">
+                    <h5 class="card-title fs-2">Lente para Laptop</h5>
+                    <p class="card-text text-dark fs-5">
+                        Lente para camara incorporada PC (Laptop).
+                    </p>
+                    <a href="#compra" class="btn btn-card bg0 text-white">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card">
+                <img src="../assets/imgs/repuestos/rep7.jpg" class="card-img-top" alt="accesorio">
+                <div class="card-body">
+                    <h5 class="card-title fs-2">Lente para Laptop</h5>
+                    <p class="card-text text-dark fs-5">
+                        Lente para camara incorporada PC (Laptop).
+                    </p>
+                    <a href="#compra" class="btn btn-card bg0 text-white">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card">
+                <img src="../assets/imgs/repuestos/rep8.jpg" class="card-img-top" alt="accesorio">
+                <div class="card-body">
+                    <h5 class="card-title fs-2">Lente para Desktop</h5>
+                    <p class="card-text text-dark fs-5">
+                        Lente para camara incorporada PC (Desktop).
+                    </p>
+                    <a href="#compra" class="btn btn-card bg0 text-white">Comprar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Discos duros -->
+    <section class="division2 bg4" id="rep-2">
+        <hr>
+        <h1 class="fs-1">Discos duros</h1>
+    </section>
+
+    <section class="acc-1 bg4">
+        <div>
+            <div class="card">
+                <img src="../assets/imgs/repuestos/rep9.jpg" class="card-img-top" alt="accesorio">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fs-2">Disco HDD WD</h5>
+                    <p class="card-text text-dark fs-5">
+                        Disco estado rigido para PC (Laptop/Desktop).
+                    </p>
+                    <a href="#compra" class="btn btn-card bg0 text-white">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card">
+                <img src="../assets/imgs/repuestos/rep10.jpg" class="card-img-top" alt="accesorio">
+                <div class="card-body">
+                    <h5 class="card-title fs-2">Disco HDD "G"</h5>
+                    <p class="card-text text-dark fs-5">
+                        Disco estado rigido para PC (Laptop/Desktop).
+                    </p>
+                    <a href="#compra" class="btn btn-card bg0 text-white">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card">
+                <img src="../assets/imgs/repuestos/rep11.jpg" class="card-img-top" alt="accesorio">
+                <div class="card-body">
+                    <h5 class="card-title fs-2">Disco HDD WD</h5>
+                    <p class="card-text text-dark fs-5">
+                        Disco estado rigido para PC (Laptop/Desktop).
+                    </p>
+                    <a href="#compra" class="btn btn-card bg0 text-white">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card">
+                <img src="../assets/imgs/repuestos/rep12.webp" class="card-img-top" alt="accesorio">
+                <div class="card-body">
+                    <h5 class="card-title fs-2">Disco HDD SG</h5>
+                    <p class="card-text text-dark fs-5">
+                        Disco estado rigido para PC (Laptop/Desktop).
+                    </p>
+                    <a href="#compra" class="btn btn-card bg0 text-white">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card">
+                <img src="../assets/imgs/repuestos/rep13.jpg" class="card-img-top" alt="accesorio">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fs-2">SSD SandDisk</h5>
+                    <p class="card-text text-dark fs-5">
+                        Disco estado solido para PC (Laptop/Desktop).
+                    </p>
+                    <a href="#compra" class="btn btn-card bg0 text-white">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card">
+                <img src="../assets/imgs/repuestos/rep14.jpg" class="card-img-top" alt="accesorio">
+                <div class="card-body">
+                    <h5 class="card-title fs-2">SSD WD</h5>
+                    <p class="card-text text-dark fs-5">
+                        Disco estado solido para PC (Laptop/Desktop).
+                    </p>
+                    <a href="#compra" class="btn btn-card bg0 text-white">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card">
+                <img src="../assets/imgs/repuestos/rep15.jpg" class="card-img-top" alt="accesorio">
+                <div class="card-body">
+                    <h5 class="card-title fs-2">SSD Samsung</h5>
+                    <p class="card-text text-dark fs-5">
+                        Disco estado solido para PC (Laptop/Desktop).
+                    </p>
+                    <a href="#compra" class="btn btn-card bg0 text-white">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card">
+                <img src="../assets/imgs/repuestos/rep16.jpg" class="card-img-top" alt="accesorio">
+                <div class="card-body">
+                    <h5 class="card-title fs-2">SSD Kingston</h5>
+                    <p class="card-text text-dark fs-5">
+                        Disco estado solido para PC (Laptop/Desktop).
+                    </p>
+                    <a href="#compra" class="btn btn-card bg0 text-white">Comprar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Pantallas y touchpads -->
+     <section class="division2 bg4" id="rep-3">
+        <hr>
+        <h1 class="fs-1">Pantallas y touchpads</h1>
+    </section>
+
+    <section class="acc-1 bg4">
+        <div>
+            <div class="card">
+                <img src="../assets/imgs/repuestos/rep17.png" class="card-img-top" alt="accesorio">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fs-2">Pantalla normal</h5>
+                    <p class="card-text text-dark fs-5">
+                        Pantalla para PC tamaño 14".
+                    </p>
+                    <a href="#compra" class="btn btn-card bg0 text-white">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card">
+                <img src="../assets/imgs/repuestos/rep18.jpg" class="card-img-top" alt="accesorio">
+                <div class="card-body">
+                    <h5 class="card-title fs-2">Pantalla pequeña</h5>
+                    <p class="card-text text-dark fs-5">
+                        Pantalla para PC tamaño 9".
+                    </p>
+                    <a href="#compra" class="btn btn-card bg0 text-white">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card">
+                <img src="../assets/imgs/repuestos/rep19.webp" class="card-img-top" alt="accesorio">
+                <div class="card-body">
+                    <h5 class="card-title fs-2">Pantalla pequeña</h5>
+                    <p class="card-text text-dark fs-5">
+                        Pantalla para PC tamaño 12".
+                    </p>
+                    <a href="#compra" class="btn btn-card bg0 text-white">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card">
+                <img src="../assets/imgs/repuestos/rep20.webp" class="card-img-top" alt="accesorio">
+                <div class="card-body">
+                    <h5 class="card-title fs-2">Pantalla pequeña</h5>
+                    <p class="card-text text-dark fs-5">
+                        Pantalla para PC tamaño 10".
+                    </p>
+                    <a href="#compra" class="btn btn-card bg0 text-white">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card">
+                <img src="../assets/imgs/repuestos/rep21.jpg" class="card-img-top" alt="accesorio">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fs-2">Touchpad HP OMEN</h5>
+                    <p class="card-text text-dark fs-5">
+                        Touchpad para modelo HP OMEN 15.
+                    </p>
+                    <a href="#compra" class="btn btn-card bg0 text-white">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card">
+                <img src="../assets/imgs/repuestos/rep22.jpg" class="card-img-top" alt="accesorio">
+                <div class="card-body">
+                    <h5 class="card-title fs-2">Touchpad DELL XS</h5>
+                    <p class="card-text text-dark fs-5">
+                        Touchpad para modelo DELL XS.
+                    </p>
+                    <a href="#compra" class="btn btn-card bg0 text-white">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card">
+                <img src="../assets/imgs/repuestos/rep23.jpg" class="card-img-top" alt="accesorio">
+                <div class="card-body">
+                    <h5 class="card-title fs-2">Touchpad SAMSUNG</h5>
+                    <p class="card-text text-dark fs-5">
+                        Touchpad para modelo SAMSUNG.
+                    </p>
+                    <a href="#compra" class="btn btn-card bg0 text-white">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card">
+                <img src="../assets/imgs/repuestos/rep24.jpg" class="card-img-top" alt="accesorio">
+                <div class="card-body">
+                    <h5 class="card-title fs-2">Touchpad HP Generico</h5>
+                    <p class="card-text text-dark fs-5">
+                        Touchpad para modelo HP generico.
+                    </p>
+                    <a href="#detalle" class="btn btn-card bg0 text-white">Comprar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detalles de compra -->
+    <section class="division2 bg4">
+        <hr>
+        <h1 class="fs-1">Detalles de compra</h1>
+    </section>
+
+    <section class="bg5">
+        <form id="compra">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label fs-2">Direccion de correo electronico</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="direccion_ejemplo@gmail/hotmail/yahoo.com">
+              <div id="emailHelp" class="form-text text-white fs-4">Nunca compartiremos su correo con nadie.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label fs-2">Dirección de vivienda</label>
+              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Localidad - Pais de residencia - Direccion de vivienda">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label fs-4" for="exampleCheck1">Acepto terminos y condiciones</label>
+            </div>
+            <a href="../index.html" class="btn btn-form bg0 text-white fs-4">Proceder a facturación</a>
+          </form>
+          <br>
+    </section>
+
+    <!-- Pie de pagina -->
+    <footer class="bg2">
+        <div>
+            <h3 class="fs-4">Locales alrededor del país (Guatemala)</h3>
+            <ul class="fs-5">
+                <li>Vista Hermosa 1, ciudad capital 5-20 zona 2</li><br>
+                <li>San Antonio, Sacatepequez 3-14 sector 3</li><br>
+                <li>Santa Catarina Pinula, Guatemala 2-20 zona 1</li>
+            </ul>
+        </div>
+        <div>
+            <h3 class="fs-4">Contacto</h3>
+            <ul class="fs-5">
+                <li>PBX: 456-456-789</li><br>
+                <li>Correo: informacion@techClub.com</li><br>
+                <li>Direccion postal: +001 4523</li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- JavaScript bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
 </body>
 </html>
