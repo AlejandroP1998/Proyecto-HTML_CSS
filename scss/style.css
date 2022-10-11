@@ -130,10 +130,16 @@ p {
 .sect1, .sect4, .sect3, .sect2 {
   grid-area: sect1;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .sect1, .sect4, .sect3, .sect2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .sect1, .sect4, .sect3, .sect2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 @media (max-width: 768px) {
@@ -277,8 +283,15 @@ p {
   }
 }
 
-.card img {
-  height: 250px;
+@media (min-width: 768px) {
+  .card img {
+    height: 250px;
+  }
+}
+@media (max-width: 768px) {
+  .card img {
+    height: 40vw;
+  }
 }
 
 .card-title,
@@ -382,7 +395,7 @@ p {
 
 /* --------------------------------------------- Diseños de la barra de navegacion ---------------------------------------- */
 header {
-  width: 100vw;
+  width: 100%;
 }
 @media (min-width: 992px) {
   header {
@@ -491,7 +504,7 @@ footer {
 }
 @media (min-width: 768px) {
   footer {
-    width: 100vw;
+    width: 100%;
     height: 200px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -505,10 +518,10 @@ footer {
 }
 @media (max-width: 768px) {
   footer {
-    width: 100vw;
+    width: 100%;
     height: 200px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     color: white;
     padding-bottom: 600px;
   }
